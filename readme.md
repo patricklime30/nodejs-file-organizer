@@ -13,13 +13,18 @@ Instead of manually sorting your Downloads folder, run one command and let the t
 * 🌍 Can be installed globally and used anywhere
 
 ## Installation
+Create folder:
+```bash
+mkdir file-organizer
+
+cd file-organizer
+```
 
 Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/patricklime30/nodejs-file-organizer.git .
 
-cd file-organizer
 ```
 
 Install globally:
@@ -31,7 +36,7 @@ npm install -g .
 After installation, use the command:
 
 ```bash
-organize <folder-path>
+organize <full-folder-path>
 ```
 
 ## Usage
@@ -39,7 +44,7 @@ organize <folder-path>
 Example:
 
 ```bash
-organize Downloads
+organize C:\User\Downloads
 ```
 
 Before:
@@ -84,13 +89,13 @@ npm uninstall -g file-organizer
 Run without global installation:
 
 ```bash
-node organizer.js <folder-path>
+node organizer.js <full-folder-path>
 ```
 
 Example:
 
 ```bash
-node organizer.js Downloads
+node organizer.js C:\Users\Downloads
 ```
 
 ## How It Works
